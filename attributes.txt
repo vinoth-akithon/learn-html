@@ -1,0 +1,14 @@
+href = "url" --> used to specify the hyperlink url to the anchor tag.
+src = "image directory" --> used to specify the image location to the image tag.
+alt --> used to dispaly alternative text to the image tag.
+height, width --> used to specify the width and height of the image tag.
+lang = "en-US" --> used to spacify the language of the doc in html tag.we can alse use country code.
+title --> used for showing title when the mouse over the tags.
+style --> for styling the tag such as specify the font,color etc
+rtl --> for text shown in reverse direction.
+target --> for specifing where to open the linked document.
+    1.target attribute may hold one of the following values
+        _blank --> for opening the document in new tab.
+        _self --> for opening the document in same tab.
+        _top --> open the document in the full body of the window.
+        _parent --> open the document in parent frame.

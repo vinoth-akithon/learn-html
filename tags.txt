@@ -17,3 +17,4 @@
 <address></address> for showing address related information.
 <blockquote cite = "url..."></blockquote> --> for rendering quote from specified url.
 <cite></cite> --> for informating the creative work.
+<img></img> --> for inserting image. 
