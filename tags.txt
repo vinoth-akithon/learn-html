@@ -1,0 +1,19 @@
+<!DOCTYPE html> --> declartion of html5 document.It helps the browser to understand easily.
+<html></html> --> root element of the html document.
+<head></head> --> defines the meta information about the doc.
+<body></body> --> for displaying all the content into webpage.
+<!-- comment --> --> this for making comments in the source code.also used to hiding content. 
+<title></title> --> for display names into the browser tab.
+<h1></h1> --> most important heading.It would upto <h6>.
+<p></p> --> for defining paragraph.
+<a></a> --> for defining hyperlink.
+<hr> --> for separate content by horizondal rule.
+<br> --> for making newline or break through a line.
+<pre></pre> --> for making the preformatted para with specified spaces and linebreaks.
+<style></style> --> for styling the elements.
+<abbr></abbr> --> for defining abbreviation.
+<q></q> --> for quoting the text.
+<bdo dir = "rtl"></bdo>. --> for showing text direction as reverse.
+<address></address> for showing address related information.
+<blockquote cite = "url..."></blockquote> --> for rendering quote from specified url.
+<cite></cite> --> for informating the creative work.

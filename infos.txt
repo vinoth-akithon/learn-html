@@ -1,0 +1,12 @@
+--> HTML --> Hyper Text Markup Language
+--> Html elements is that a combination of starting tag,some content,ending tag.(ex)  <h1>This is heading</h1>
+--> Tags <tag_name> (ex) <p></p>
+--> Some elements does not have any content and also ending tag.this tags are called empty elemants. (ex) <br>
+--> We can use either .htm or .html extension.Both are same.
+--> 'utf-8' is preffered for html.
+--> Attributes are used to provide additional information to the tags.
+--> Attributes are always specified in staring tag.
+--> Html elements are not case sensitive.
+--> Colors can be represented by either "RGB, HEX, HSL, RGBA, or HSLA" values.
+--> Different color names https://www.w3schools.com/colors/colors_names.asp.
+--> CSS is stands for Cascading Style Sheet.
