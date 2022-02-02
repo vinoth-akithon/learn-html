@@ -12,3 +12,7 @@ target --> for specifing where to open the linked document.
         _self --> for opening the document in same tab.
         _top --> open the document in the full body of the window.
         _parent --> open the document in parent frame.
+id --> to define a unique identity for an element.
+usemap --> for mapping between image and map element(value starts with # followwd by map element name).
+shape --> for shaping the area element(can be either rect,circle,poly,default).
+coords --> for defining coords in area element(20,34,345,235 - for rectangle 20,49,22 -for circle)

@@ -13,7 +13,7 @@
 <body style="background-color: rgb(223, 236, 240);">
     <h1>This is h1 tag</h1>
 
-    <p>The paragraph element.</p>
+    <p id = "para">The paragraph element.</p>
         <p>Want to know how to set Jio, BSNL, Vi, and Airtel caller tune? 
         Here’s your step-by-step guide to set caller tune in Jio, Airtel, Vi, BSNL, 
         and that too for free! Instead of the monotonous Tring Tring, you can welcome 
@@ -115,17 +115,67 @@
     <br>
     <br>
     <button onclick="document.location='structure_of_html_doc.PNG'">link to an button</button>
+    <br>
+    <br>
 
+    <!-- bookmarks in html -->
+    <a href="#para">This is example for <mark>bookmark</mark>></a>
+    <br>
+    <br>
 
+    <!-- images in html -->
+    <img src="image_formats.PNG" alt="This is image format" width="600" height='300'>
+    <br>
+    <br>
+    <img src="image_formts.PNG" alt="This is image format (use case of alt attribute)" width="600" height='300'>
+    <br>
+    <br>
+    <p><img src="image_formats.PNG" alt="Image" style="float: right; height: 200px; width: 200px;">Image with <mark>float</mark> attribute</p>
+    <br>
+    <br>
 
+    <!-- image map -->
+    <p><img src="computer_image.png" alt="Computer Image" usemap="#computer" style= " height: 200px; width: 200px;"">click the computer</p>
+    <map name="computer">
+        <area shape="rect" coords="40,25,180,150" href="#para" alt="paragraph">
+    </map>
+    <br>
+    <br>
 
+    <!-- backgroung images -->
+    <div style="background-image: url(nature_with_deer.jpg);
+            background-size: cover;
+            background-attachment: fixed; 
+            height: 300px;">
+        <p style="text-align:left; padding-top: 65px;padding-left: 30px;">Want to know how to set Jio, BSNL, Vi, and Airtel caller tune? <br>
+            Here’s your step-by-step guide to set caller tune in Jio, Airtel, Vi, BSNL, <br>
+            and that too for free! Instead of the monotonous Tring Tring, you can welcome <br>
+            your callers with your favourite song or tune by setting it up as your caller tune. <br>
+            Since it’s free of cost, you can switch between multiple songs or tunes as per your <br>
+            preference. You can select from a range of options, including Bollywood, regional, <br>
+            international, instrumental, devotional, and much more. Besides, you can set Airtel, <br>
+            Vi, BSNL, and Jio caller tune in different ways, such as using an app, sending an SMS, <br>
+            or browsing online. Hence, you can choose whichever option works best for you!.</p>
+    </div>
+    <br>
+    <div style="background-image: url(nature_with_deer.jpg);
+            background-size: 100% 100%; 
+            height: 300px;">
+        <p style="text-align:left;
+             padding-top: 65px;
+             padding-left: 30px;">
+            Want to know how to set Jio, BSNL, Vi, and Airtel caller tune? <br>
+            Here’s your step-by-step guide to set caller tune in Jio, Airtel, Vi, BSNL, <br>
+            and that too for free! Instead of the monotonous Tring Tring, you can welcome <br>
+            your callers with your favourite song or tune by setting it up as your caller tune. <br>
+            Since it’s free of cost, you can switch between multiple songs or tunes as per your <br>
+            preference. You can select from a range of options, including Bollywood, regional, <br>
+            international, instrumental, devotional, and much more. Besides, you can set Airtel, <br>
+            Vi, BSNL, and Jio caller tune in different ways, such as using an app, sending an SMS, <br>
+            or browsing online. Hence, you can choose whichever option works best for you!.</p>
+    </div>
 
-
-
-
-
-
-
+    
 
 </body>
 </html>

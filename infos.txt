@@ -14,8 +14,13 @@
 --> CSS is stands for Cascading Style Sheet.
 --> Relative path is the one defines the directory url of the resource.
 --> Absolute path is the one defines the entire url of the resource.
---> we can use image or button as url.
+--> we can use image or button as link.
 --> defaulty, The link is underlined with blue color
     when its opened,it will be purple.
     when its active, it will be red.
     we can also change the color and design of the link by using css.
+--> We should always species the width and height of the image otherwise flicking happen.
+--> Use CSS height and width may used instead of HTML height and width in image tag.
+--> HTML width and height attribute defaulty taken sixes as pixels.
+--> HTML width and height are overwritten by CSS.
+--> HTML allows animated images.

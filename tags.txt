@@ -18,3 +18,5 @@
 <blockquote cite = "url..."></blockquote> --> for rendering quote from specified url.
 <cite></cite> --> for informating the creative work.
 <img></img> --> for inserting image. 
+<map></map> --> for mapping the area to image becames clickable one.
+<area></area> --> used for defind the area inside the image to make clickable.
