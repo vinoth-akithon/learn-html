@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tab title -->
     <title>LEARN HTML</title>
+    <!-- favicon -->
+        <!-- we can add the images to favicon as ico,png,gif,jpeg,svg for all browsers-->
+    <link rel="icon" href="../images/oasys_image.png" type="image/x-icon">
     <style>
-        h4 {color:rgb(124, 14, 82);}
+        h4 {color:rgb(187, 20, 123);}
     </style>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body style="background-color: rgb(223, 236, 240);">
     <h1>This is h1 tag</h1>
@@ -26,12 +30,12 @@
 
     <h3><a href="https://veeram1026.w3spaces.com/">This is hyperlink inside the h3 tag</a></h3>
 
-    <img src="structure_of_html_doc.PNG" alt="This is image" height="200px" width="400px">
+    <img src="../images/image/structure_of_html_doc.PNG" alt="This is image" height="200px" width="400px">
 
     <br>
     <br>
 
-    <img src="structur_of_html_doc.PNG" alt="This is img tag (example for 'alt' attribute)" height="200px" width="400px">
+    <img src="../images/structur_of_html_doc.PNG" alt="This is img tag (example for 'alt' attribute)" height="200px" width="400px">
 
     <h2 title="This is h2 tag" style="color: blue;">Title attribute</h2>
 
@@ -69,7 +73,7 @@
 
     <!-- Quotations -->
     <p><abbr title="Hyper Text Markup Language">HTML</abbr>is the skelaton for every webpages<mark>(example for 'abbr' tag)</mark></p>
-    <p title="name"><q>veeram1026</q><mark>(example for 'title' attribute) </mark></p>
+    <p title="name"><q>veeram1026</q><mark>(example for 'title' attribute and 'quote' element) </mark></p>
     <address><mark> address element is </mark> <br>
         5/9 kaliamman kovil strret,<br>
         ariyamangalam,<br>
@@ -108,34 +112,34 @@
     <a href="first.html" target="_top">hyperlink with target<mark>(_parent for same tab)</mark> attribute</a>
     <br>
     <br>
-    <a  href="first.html"><img  src="structure_of_html_doc.PNG" alt="There is an image" width="100px"><mark>image representation of hyperlink</mark></a>
+    <a  href="first.html"><img  src="../images/image/structure_of_html_doc.PNG" alt="There is an image" width="100px"><mark>image representation of hyperlink</mark></a>
     <br>
     <br>
     <a href="mailto:veeramvinoth15042000@gmail.com"><mark>link to an email address</mark></a>
     <br>
     <br>
-    <button onclick="document.location='structure_of_html_doc.PNG'">link to an button</button>
+    <button onclick="document.location='../images/image/structure_of_html_doc.PNG'">link to an button</button>
     <br>
     <br>
 
     <!-- bookmarks in html -->
-    <a href="#para">This is example for <mark>bookmark</mark>></a>
+    <a href="#para">This is example for <mark>bookmark in html</mark>></a>
     <br>
     <br>
 
     <!-- images in html -->
-    <img src="image_formats.PNG" alt="This is image format" width="600" height='300'>
+    <img src="../images/image_formats.PNG" alt="This is image format" width="600" height='300'>
     <br>
     <br>
-    <img src="image_formts.PNG" alt="This is image format (use case of alt attribute)" width="600" height='300'>
+    <img src="../images/image_formts.PNG" alt="This is image format (use case of alt attribute)" width="600" height='300'>
     <br>
     <br>
-    <p><img src="image_formats.PNG" alt="Image" style="float: right; height: 200px; width: 200px;">Image with <mark>float</mark> attribute</p>
+    <p><img src="../images/image_formats.PNG" alt="Image" style="float: right; height: 200px; width: 200px;">Image with <mark>float</mark> attribute</p>
     <br>
     <br>
 
     <!-- image map -->
-    <p><img src="computer_image.png" alt="Computer Image" usemap="#computer" style= " height: 200px; width: 200px;"">click the computer</p>
+    <p><img src="../images/computer_image.png" alt="Computer Image" usemap="#computer" style= " height: 200px; width: 200px;"">click the computer</p>
     <map name="computer">
         <area shape="rect" coords="40,25,180,150" href="#para" alt="paragraph">
     </map>
@@ -143,7 +147,7 @@
     <br>
 
     <!-- backgroung images -->
-    <div style="background-image: url(nature_with_deer.jpg);
+    <div style="background-image: url(images/nature_with_deer.jpg);
             background-size: cover;
             background-attachment: fixed; 
             height: 300px;">
@@ -158,7 +162,7 @@
             or browsing online. Hence, you can choose whichever option works best for you!.</p>
     </div>
     <br>
-    <div style="background-image: url(nature_with_deer.jpg);
+    <div style="background-image: url(images/nature_with_deer.jpg);
             background-size: 100% 100%; 
             height: 300px;">
         <p style="text-align:left;
@@ -174,8 +178,173 @@
             Vi, BSNL, and Jio caller tune in different ways, such as using an app, sending an SMS, <br>
             or browsing online. Hence, you can choose whichever option works best for you!.</p>
     </div>
+    <br>
+    <!-- Pictute element in html -->
 
+    <picture>
+        <source media="(min-width: 450px )" srcset="images/computer_image.png">
+        <source media="(min-width: 250px)" srcset="images/nature_with_deer.jpg">
+        <img src="../images/image_formats.PNG" alt="Computer Image">
+        <!-- Always define image tag at last for it will take account if the picture tag does not support -->
+        <!-- we can use pictute element for two cases,
+                1.Respond the images depends upon the screen or device
+                2.Some browsers does not support different image formats-->
+    </picture>
+    <br>
+    <br>
+    <!-- Tables in html -->
+    <table class="table1" style="border-collapse:collapse;">
+        <tr>
+            <th>S.NO</th>
+            <th>Name</th>
+            <th>Dept</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Vinoth kumar</td>
+            <td>EEE</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Suganya</td>
+            <td>English</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Aki</td>
+            <td>Physics</td>
+            
+        </tr>
+    </table>
+    <br>
+    <table style="border-spacing: 20px;">
+        <caption><strong>Department wise name list</strong></caption>
+        <colgroup>
+            <col span="1">
+            <col span = "1" style="background-color: antiquewhite; ">
+        </colgroup>
+        <tr >
+            <th colspan="2">Name</th>
+            <th rowspan="2">Dept</th>
+        </tr>
+        <tr style = "background-color:rgb(223, 236, 240)">
+            <th >First Name</th>
+            <th>Last Name</th>
+        </tr>
+        <tr>
+            <td>Vinoth</td>
+            <td>kumar</td>
+            <td>EEE</td>
+        </tr>
+        <tr>
+            <td>Dinesh</td>
+            <td>Kumar</td>
+            <td>ECE</td>
+        </tr>
+        <tr>
+            <td>Pranav</td>
+            <td>Kumar</td>
+            <td>Physics</td>
+        </tr>
+        <tr>
+            <td>Manoj</td>
+            <td>kumar</td>
+            <td>EEE</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+
+    <!-- List in html -->
+    <!-- unordered list -->
+    <ul style=" list-style-type: square;">Unordered List:
+        <li>veeram</li>
+        <li>vinoth</li>
+        <li>manoj</li>
+        <li>kumar</li>
+    </ul>
+    <br>
+    <!-- ordered list -->
+    <ol>Ordered List:
+        <li>Name</li>
+            <ol type="I">
+                <li>vinoth</li>
+                <li>dhinesh</li>
+                <li>bala</li>
+                <li>manoj</li>
+                <li>prabu</li>               
+                <li>aravind</li>
+            </ol>
+            
+        <li>Age</li>
+            <ol type="A">
+                <li>21</li>
+                <li>20</li>
+                <li>25</li>
+                <li>23</li>
+                <li>24</li>
+                <li>22</li>
+            </ol>
+        <li>Dept</li>
+            <ol type="1" start="10">
+                <li>EEE</li>
+                <li>ECE</li>
+                <li>MECH</li>
+                <li>EEE</li>
+                <li>EEE</li>
+                <li>MECH</li>
+            </ol>
+    </ol>
+    <br>
+    <dl>Description List:
+        <dt>Name:</dt>
+        <dd>- Vinoth Kumar</dd>
+        <dt>Age:</dt>
+        <dd>- 22</dd>
+    </dl>
+    <br>
+
+    <!-- Class in attribute -->
+    <div class="class" >
+        <h3 class ="h3element" id="h3element">Class in Html</h3>
+        <ul class="quote" >My daily Quotes:
+            <!-- one element can contain multiple class name -->
+            <!-- diffrent element can have same class name -->
+            <li class = "class names">I am the best in the world</li>
+            <li class = "1">I am the winner in the world</li>
+            <li>I can do it</li>
+            <li>God is always with me</li>
+            <li>Today is my day</li>
+        </ul>
+    </div>
+    <br>
+
+    <!-- Iframe in HTML -->
+        <!-- Youtube embed -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/tYSrY4iPX6w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     
+    <iframe src="https://translate.google.co.in" name="iframe" frameborder="0" width="500" height="400" ></iframe>
+    <p><a href="https://www.w3schools.com" target="iframe">W3Schools.com</a></p>
+
+    <!-- script disabled message -->
+    <noscript>Sorry!,you browser does not javascript.</noscript>
+
+    <!-- javascript in HTML -->
+    <p id ="para1" >This is responsive para</p>
+    <button type="submit" onclick="myFunction()">Click Here</button>
+    <script>
+        function myFunction() {
+            document.getElementById("para1").innerHTML = "respondant paragraph"
+        }
+    </script>
+
+
+
+
+
+
+
+
 
 </body>
 </html>

@@ -1,18 +1,47 @@
-href = "url" --> used to specify the hyperlink url to the anchor tag.
-src = "image directory" --> used to specify the image location to the image tag.
-alt --> used to dispaly alternative text to the image tag.
-height, width --> used to specify the width and height of the image tag.
+href = "url" --> used to specify the hyperlink url to the anchor tag. (href = "first.html")
+src = "image directory" --> used to specify the image location to the image tag. (src = "images/image.png")
+alt --> used to dispaly alternative text to the image tag. (alt = "relevant text")
+height, width --> used to specify the width and height of the image tag. (height = 20 width = 30) 
 lang = "en-US" --> used to spacify the language of the doc in html tag.we can alse use country code.
-title --> used for showing title when the mouse over the tags.
-style --> for styling the tag such as specify the font,color etc
-rtl --> for text shown in reverse direction.
-target --> for specifing where to open the linked document.
+title --> used for showing title when the mouse over the tags. (title = "Some text")
+style --> for styling the tag such as specify the font,color etc (style = "color: block; width = 20px")
+dir --> to transform text as disired direction in bdo element. (dir = "rtl" or "ltr")
+target --> for specifing where to open the linked document. (target = "_blank")
     1.target attribute may hold one of the following values
         _blank --> for opening the document in new tab.
         _self --> for opening the document in same tab.
         _top --> open the document in the full body of the window.
         _parent --> open the document in parent frame.
-id --> to define a unique identity for an element.
-usemap --> for mapping between image and map element(value starts with # followwd by map element name).
-shape --> for shaping the area element(can be either rect,circle,poly,default).
-coords --> for defining coords in area element(20,34,345,235 - for rectangle 20,49,22 -for circle)
+        {iframe name} --> ope the resources in iframe.
+id --> to define a unique identity for an element. (id = "unique text")
+usemap --> for mapping between image and map element(value starts with # followwd by map element name). (usemap = #sometext)
+shape --> for shaping the area element(can be either rect,circle,poly,default). (shape = "rect")
+coords --> for defining coords in area element.(20,34,345,235 - for rectangle 20,49,22 -for circle) (coords = "23,56,57,78")
+media --> for defining device width in source element. (media="min-width:250px) 
+srcset --> for referencing image resource in source element. (srcset="images/image.png") 
+colspan --> for defining the span for desised columns. (<tr><th colspan = "Number"></th></tr>)
+rowspan --> for defining the span for desised rows. (<tr><th rowspan = "Number"></th></tr>)
+span --> for defining the columns span in colgroup. (<col span="Number" >)
+type --> for specifing the type of orders in ordered list (<ol type = "1" ></ol>)
+    1. type attribute may hold different values
+        1 --> for numerical.
+        A --> for alphabitical with upper case..
+        a --> for alphabitical with lower case.
+        I --> for roman with upper case.
+        i --> for roman with lower case.
+start --> for defining the start value of the ordered list.
+class --> used to point to a class name in CSS and Javascript. (<div class = "name"></div>)
+    1. multiple class on one element (<div class = one two three></div>)
+    2. diffrent element can share same class (<h1 class = "name"></h1><h2 class = "name"></h2>)
+    3. Javascript can access HTML element with a specific class name by getElementByClassName() method.
+    4. class name is case sensitive.
+    5. declartion of class in CSS by (.className { css properties})
+    6.Name of the id should not start with number and atleast contain one char.
+id --> used to point to a id selector in CSS and Javascript. (<div id = "name"></div>)
+    1. Value of the id attribute should be unique HTML document.
+    2. Javascript can access HTML element with a specific id by getElementById method.
+    3. class name is case sensitive.
+    4. By using id attribute we can create bookmarks in HTML document.
+    5. declartion of id in CSS by (#idName { css properties})
+    6. Name of the id should not start with number and should not contain spaces or tabs and atleast contain one char.
+

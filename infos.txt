@@ -21,6 +21,25 @@
     we can also change the color and design of the link by using css.
 --> We should always species the width and height of the image otherwise flicking happen.
 --> Use CSS height and width may used instead of HTML height and width in image tag.
---> HTML width and height attribute defaulty taken sixes as pixels.
+--> HTML width and height attribute defaulty taken sizes in pixels.
 --> HTML width and height are overwritten by CSS.
 --> HTML allows animated images.
+--> We can make zebra stripe effects on table by using nth-child(even or odd) CSS selector.
+--> We can make hover effect for each row in table by using hover selector in CSS.
+--> Caption should be next as child element inside the table.
+--> Colgroup should be next at caption(if it has) element in the table.
+--> Colgroup element accept only few legal css properties(width,visibility,background,border)
+--> Col element with only span cause empty col group(it does not make any changes in the table)
+--> List item marker for unordered list is bullet(disc) for default.
+--> We can use CSS float:left attribute to dispaly the dictionary horizondally.
+--> List element can hold all html elmemts lile images,links etc.
+--> Block level elements starts with new line and always takes up the full width available.
+--> Block level element has top and bottom margin whereas inline elemants are not.
+--> Inline element does not start with new link and also takes up the necessary width.
+--> An inline element cannot contain a block-level elemants.
+--> Every HTML element has a default deplay value.
+--> class attribute can be used in all HTML elemants.
+--> id attribute can also be used in all HtML elements.
+--> difference between class and id is that id value should be used one HTML element inside a page whereas class shoud not be.
+--> script element either contain script statement or points to the external file throught src.
+--> Common uses of javascript are image manipulation,form validation and dynamic change of content.

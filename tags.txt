@@ -3,20 +3,40 @@
 <head></head> --> defines the meta information about the doc.
 <body></body> --> for displaying all the content into webpage.
 <!-- comment --> --> this for making comments in the source code.also used to hiding content. 
-<title></title> --> for display names into the browser tab.
-<h1></h1> --> most important heading.It would upto <h6>.
-<p></p> --> for defining paragraph.
-<a></a> --> for defining hyperlink.
-<hr> --> for separate content by horizondal rule.
-<br> --> for making newline or break through a line.
-<pre></pre> --> for making the preformatted para with specified spaces and linebreaks.
-<style></style> --> for styling the elements.
-<abbr></abbr> --> for defining abbreviation.
-<q></q> --> for quoting the text.
-<bdo dir = "rtl"></bdo>. --> for showing text direction as reverse.
-<address></address> for showing address related information.
+<title></title> --> for display names into the browser tab. (<title>Some Text</title>)
+<h1></h1> --> most important heading.It would upto <h6>. (<h1>Some Text</h1>)
+<p></p> --> for defining paragraph.(<p>Some Text</p>)
+<a></a> --> for defining hyperlink.(<a href="">Some text</a>)
+<hr> --> for separate content by horizondal rule.(<hr> empty element)
+<br> --> for making newline or break through a line.(<br> empty element)
+<pre></pre> --> for making the preformatted para with specified spaces and linebreaks.(<pre> some text with </pre>)
+<style></style> --> for styling the elements.(<style> element { color: red;} </style>)
+<abbr></abbr> --> for defining abbreviation.(<abbr title = Hyper Text Markup Language>HTMl</abbr>)
+<q></q> --> for quoting the text.(<q>Some Text</q>)
+<bdo dir = "rtl"></bdo>. --> for showing text direction as reverse.(<bdo dir = "rtl">Some Text</bdo>)
+<address></address> for showing address related information. (<address> Some Text </address>)
 <blockquote cite = "url..."></blockquote> --> for rendering quote from specified url.
-<cite></cite> --> for informating the creative work.
-<img></img> --> for inserting image. 
-<map></map> --> for mapping the area to image becames clickable one.
-<area></area> --> used for defind the area inside the image to make clickable.
+<cite></cite> --> for informating the creative work like italic. (<cite>Some Text</cite>)
+<img> --> for inserting image. (<img src = "image url alt = "Some Text relevant for image> empty element)(usemap attribute if image mapping)
+<map></map> --> for mapping the area to image becames clickable one. (<map name = "Some Text><area></map)
+<area> --> used for defind the area inside the image to make clickable. (<area shape = "rect" coords = "12,34,56,78" href = url alt = Some Text> empty element)
+<pictute></picture> --> used to display the image for differnt device size and format support. (<picture><source><img></picture>)
+<source> --> which is used inside the picture element for refering images.(<source media = (min-width: 250px) srcset = image url>)
+<table></table> --> for defining the tables. (<table><tr></tr></table>)
+<tr></tr> --> for defining the table rows. (<tr> <td>Some Text </td> </tr>)
+<th></th> --> for defining the table cells as header,whicch is defaultly bols and center aligned. (<th>Some Text</th)
+<td></td> --> for defining the table cells which can hold all kind of html elements.(<td>Some text</td>)
+<caption></caption> --> for describing the table name.(<table><caption>Some Text</caption></table>)
+<colgroup></colgroup> --> for grouping columns in table.which is container for <col> elements.(<colgroup><col></col></colgroup)
+<col> --> for styling the group of colums in the table(<col span = "Number" style = "background-color: red"> empty element)
+<ul></ul> --> for defining unordered list. (<ul>Some Text<li>Some Text</li></ul>)
+<ol></ol> --> for defining the ordered list. (<ol>Some Text<li>Some Text</li></ol)
+<li></li> --> for defining list element inside the list. (<li>Some Text</li>)
+<dl></dl> --> for defining the description list. (<dl><dt>Title<dd>Some Text</dd></dt></dl>)
+<dt></dt> --> for defining the description terms. (<dt>Term</dt>)
+<dd></dd> --> for defining the descriptions. (<dd>Explaination</dd>)
+<div></div> --> used as a container for other html elements,it is block level element. (<div>Block level elements</div>)
+<span></span> --> It is a inline container used to mark up a part of text or document. (<span>Inline Elements</span>
+<iframe></iframe> --> used to embbed the other resource into a html document. (<iframe stc="url" title="Text"></iframe>)
+<script></scirpt> --> used to define the client side javascript. (<script>Some Function</script>)
+<noscript></noscript> --> used to display the diabled the script in thier browser. (<noscript>Some Text</noscript>)

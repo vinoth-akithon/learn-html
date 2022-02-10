@@ -2,3 +2,47 @@ h3 {
     color: darkorchid;
     
 }
+table {
+    border: 2px ridge rgb(95, 102, 102);
+    width: 50%;
+
+}   
+
+td, th {
+    /* border: 1px solid #110c0c; */
+    border-width: 1.5px;
+    border-style: solid;
+    border-color: rgb(32, 29, 29);
+    padding: 5px;
+
+}
+
+tr:nth-child(even) {
+    background-color: rgb(182, 189, 189);
+}
+
+tr:hover{
+    background-color: rgb(146, 116, 231);
+}
+/* for defining zebra stripes */
+/* td:nth-child(even) , th:nth-child(even) {
+    background-color: rgba(113, 167, 167,0.1);
+} */
+
+/* class declaration */
+.class .h3element{
+    margin-left: 0;
+    color: rgb(17, 0, 255);
+}
+.quote {
+    color: brown;
+}
+.names {
+    color: darkgreen;
+}
+
+/* id declaration */
+#h3element {
+    color: crimson;
+}
+
