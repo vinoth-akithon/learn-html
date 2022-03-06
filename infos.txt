@@ -5,7 +5,7 @@
 --> Tags <tag_name> (ex) <p></p>
 --> Some elements does not have any content and also ending tag.this tags are called empty elemants. (ex) <br>
 --> We can use either .htm or .html extension.Both are same.
---> 'utf-8' is preffered for html.
+--> 'UTF-8' is preffered for html.(HTML takes it as default)
 --> Attributes are used to provide additional information to the tags.
 --> Attributes are always specified in staring tag.
 --> Html elements are not case sensitive.
@@ -43,3 +43,92 @@
 --> difference between class and id is that id value should be used one HTML element inside a page whereas class shoud not be.
 --> script element either contain script statement or points to the external file throught src.
 --> Common uses of javascript are image manipulation,form validation and dynamic change of content.
+--> It is best practice to use relative file paths
+    - ../ for refering the resource one level top from the current file.
+    - folder/ for refering the resource inside a folder with respect to current directory.
+--> Title element is required in html document.
+--> Content of the page title is very important for search engine optimization(SEO)
+--> meta datas are not displayed in webpages but are used by web browsers(hw to display contents)
+--> There is only one base element can exist in the HTML doc.(attribute either href or target or both)
+--> There are 4 diffrent layout technologies used (css framework, css float property, css flexbox, css grid)
+--> Responsive web design will automatically align for deferent screen size and devices.
+--> responsive web design css frameworks are W3.CSS(indepentant of jquery and javascript) and BOOTSTRAP (uses jquery).
+--> The code element does not preserve extra whitespace and linebreaks.
+--> An HTML doc can have more header element. But the header cannot be placed inside the header,footer,address elements.
+--> Some web servers are case sensitive (Apache,Unix).
+--> Some web servers are case insensitive (Microsoft,IIS).
+--> File name should be in all lower case.
+--> HTML style guide:
+    - Always declare <!DOCTYPE html>
+    _ Always use <html>, <head> and <body> element.
+    - Always use lower case for element names. (<h1></h1>)
+    - Always use lower case for attribute names. (<h1 style="color:red;"></h1)
+    - Always quote attribute values. (<h1 style="color:red;"></h1)
+    - Close all HTML element with thee help of closing tag.(HTML does not care about it) (<h1></h1>)
+    - Always use alt,width and height for image element. (<img src="image url>" widht=20 height=20 alt="image")
+    - Don't use space between values and equal sign. (HTML does not care about it)
+    - Should avoid long line codes.
+    - Use two space for indentations (don't use tab)
+    - Don't add blank line, spaces, indentation without a reason.
+    - Add blank lines for separate large or logic level codes.
+    - Never skip the title elemant in the head section.
+    - Close HTML empty element by using closing slash(/) (this required in XML and XHTML)
+    - Should use 'lang' attribute in <html> element (<html lang="en">) 
+    - Character encoding and language defining should be initialize as early possible.
+    - Should include viewport meta data for responsive.
+    - Short CSS can be in single line but long CSS must be vertical aligned.
+    - Use simple syntax for linking css (<link rel="stylesheet" href="resource url">) ("type" attribute is not necessary)
+    - Use simple syntax for linking script (<script src="resource url">) ("type" attribute is not necessary)
+    - HTML file should have .html or .htm extention.
+    - CSS file should have .css extention.
+    - JS file should heve .js extention.    
+    - Default file name is 'index.html'
+
+--> Character entities or numerical entities are used to represent the reservered word,currency,tech or maths symbols in HTML.
+--> Character entity easy to remember but some browser can not understand it.
+--> Numerical entity is a good choice.
+--> Entity numbers should starts with "&#" and ends with semicolonn(";")
+--> We can implement non bracking space by using "&nbsp;" (<h1>Name : &nbsp; vinoth</h1>)
+--> We can use "&lt;" and "&gt;" for "<" and ">" respectivily.
+--> for ampersand(&) use "&amp;" , for quotation(") use "&quot;", for copyright use "&copy;"
+--> Entity names are case sensitive.
+--> Emojis are characters in UTF-8.
+--> UTF-8 almost cover all the characters and symbols in the world.
+--> ASCII was support 128 different characters.
+--> ISO-8859-1 was support 256 characters. (default in HTML4 but HTML4 supports UTF-8)
+--> ANSI windows character set, idenetical to ISO-8859-1 except extra 32 char.
+   
+--> URL is the another word for web address.
+--> URL - Uniform Resource Locator.
+--> URL can be compossed of words or ip address.
+--> Length of the url is limited(2048 characters)
+--> URL can only be sent over the internet using ASCII charactar set.
+--> IF the URL outside the ASCII character set,the browser will convert it before send into the server.
+--> Our browser will encode the inputs accourding to the character set used in the page.
+
+--> HTML forms is ude to collect the user inputs.
+--> 'id' and 'value' should be unique in both 'checkbox' and 'radio' buttons but 'name' attribute in radio button should be same.
+--> If the action attribute is omitted,the action is set to the current page. 
+--> Form data can be sent as URL variable by using the "GET" method.(Default method)
+--> 'GET' methods is useful for where the user need to bookmark the url.
+--> Form submission with "POST" cannot be book marked.
+--> 'POST' method has no size limitation and can be used for sending large amount of data.
+--> Never use 'GET' method while the form has sensitive info.
+--> defaultly form has certain validation.
+--> Always use type attribue for 'button' element.Because different browser will take different type as defaultly.
+--> Default type for input element is 'text'
+--> The value of the disabled input field wil not sent when the form submission.
+--> Readonly input field will be sent to the server when the form submission.
+--> use the global 'title' attribute for describing the 'pattern' to help the users.
+--> 'formaction' attribue will overwrite the content of the 'action' attribute
+--> Canvas is only the container(rectangular area) for the graphics,graphics are drawn by JS.
+--> SVG -> Scalable Vector Graphics. -> recommendation of W3C.
+--> Canvas is JS based,but SVG is a language that XML based.
+--> Only MP4, WebM, and Ogg video are supported by the HTML standard.
+--> Only MP3, WAV, and Ogg audio are supported by the HTML standard.
+--> Text between the video element can show by the browser when the video files are not supported.
+--> 'controls' attribute is must for 'audio' tag for display audio content.
+--> 'autoplay' with 'muted' properties also possible for 'audio' tag.
+--> "embed" element is empty element.
+--> SSE - Server Sent Event (one way messaging)
+    1. With the help of SSE the web page update automatically,without asking any availables in server.

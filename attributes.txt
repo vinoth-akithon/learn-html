@@ -45,3 +45,81 @@ id --> used to point to a id selector in CSS and Javascript. (<div id = "name"><
     5. declartion of id in CSS by (#idName { css properties})
     6. Name of the id should not start with number and should not contain spaces or tabs and atleast contain one char.
 
+meta tage arrtributes ab=nd values:
+    1. charset = "UTF-8" --> for encoding 
+    2. name = "description" --> for describing the webpage.(content = "Some Text")
+    3. name = "keyword" --> for letting keywords to SEO. (content = "HTML, CSS")
+    4. http-equi = "refresh" --> for refreshing the page in given period. (content = "30")
+    5. name = "author" --> for author info. (content = "Author Name")
+    6. name = "viewport" --> for make the website looks nice in all devices.(content="width = divice-width,initial-scale=1.0")
+
+form attribues:
+===============
+action --> for defining what the action to be performed when the form is submitted.
+target --> specifed where to display the response after the form is submitted.
+method --> specifes the HTTP method to be used whn the form is submitted.
+    1. method = "GET" --> used for sending insensitive data to the server.
+    2. method = "POST" --> for sending sensitive data to the server.
+autocomplete --> used to auto complete the form input field.(It can either "on" or "off")
+novalidate --> It should not validate the form fields when submission.
+name --> specifies the name of the form.
+
+textarea attribute:
+==================
+rows --> for specifing the number of rows should display defaultly.
+cols --> for specifing the number of columns should display defaultly.
+
+select attribues:
+================
+name --> specifies the name of dropdown.(<select name="Some Text"></select>)
+multiple --> for selecting multiple options from the dropdown. (<select multiple></select>)
+size --> for showing the size of the options on display. (<select size="3"></select>)
+
+option attribues:
+=================
+value --> to hold the value for a option. (<option value="Some Text"></option>)
+selected --> for pre-selected option.
+
+input arrtributes:
+===================
+type --> for selecting the type of input.
+    1.type = "text" --> for text input.
+    2.type = "file" --> for upload file.
+    3.type = "radio" --> for radio button.
+    4.type = "checkbox" --> for defing checkbox.
+    5.type = "number" --> for numerical input.
+    6.type = "button" --> for define the button.
+    7.type = "submit" --> for submtting the form data to form-handle in server.
+    8.type = "range" --> for specifing the range input.
+    9.type = "search" --> for defining search input.
+    10.type = "tel" --> for phone number.
+    11.type = "email" --> for email input.
+    12.type = "password" --> for pasword.
+    13.type = "date" --> for date picker.
+    14.type = "color" --> for color picker.
+
+required --> for specifies the input is requied(mandotary.).
+pattern --> for specifing pattern(regular expression) for a input field checked against the form submission. (shot for 'email','tel','text','date','search','password')
+checked --> for pre-selecting the input in 'checkbox' and 'radio'
+disabled --> for disabling the input field.
+max --> specifies the maximum value of number in input type. (shut for 'number','range','date','time')
+min --> specifies the minimum value of number in input type. (shut for 'number','range','date','time')
+step --> specifies the step value of number input field. (shut for 'number','range','date')
+maxlength --> specifies the maximum characters in text input field.
+minlength --> specifies the minimum characters in text input field.
+value --> specifies the default value of an input field.
+placeholder --> for hinting the user to fill the input field.
+list --> for mappting the datalist id with input field. (<input list="id"><datalist id="Some Text"><option></datalist>)
+size --> for specifies the width of the input field. (shut for 'search','text','tel','url','email','password')
+mutiple --> for allow more than one value in the input field. (shut for 'file','dropdown')
+autocomplete --> for autocomplete the field with previously filled words.
+form --> for mapping a outside input element to a form. (<input form = "Id of the form">) 
+formaction --> it will overwrite the existing action url. (<input formaction="/second.html">) (shut for 'submit' and 'image')
+formenctype --> it will overwrite the existing enctype. (<input formenctype ="multipart/form-data">) (only for 'post' method) (shut for 'submit' and 'image') 
+formmethod --> It will overwrite the existing <form> element method attribute (shut for 'submit' and 'image')
+formtarget --> It will overwrite the existing the <form> element target attribute.(shut for 'submit' and 'image')
+formnovalidate --> It will overwrite the <form> element novalidate attribute.(<input formnovalidate = "formnovalidate">)
+
+controls --> for adding controls like play,pause etc in video element. (<video controls> <source> </video>)
+autoplay --> for autoplaying the video once the browser refreshed. (<video autoplay> <source> </video>)
+muted --> for playing the viseo or audio files in mute state. (<video autoplay muted> <source> </video>>)

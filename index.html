@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="html">
+    <meta name="author" content="vinoth kumar">
+    <base href="" target="_blank">
     <!-- Tab title -->
     <title>LEARN HTML</title>
     <!-- favicon -->
@@ -179,19 +182,7 @@
             or browsing online. Hence, you can choose whichever option works best for you!.</p>
     </div>
     <br>
-    <!-- Pictute element in html -->
-
-    <picture>
-        <source media="(min-width: 450px )" srcset="images/computer_image.png">
-        <source media="(min-width: 250px)" srcset="images/nature_with_deer.jpg">
-        <img src="images/image_formats.PNG" alt="Computer Image">
-        <!-- Always define image tag at last for it will take account if the picture tag does not support -->
-        <!-- we can use pictute element for two cases,
-                1.Respond the images depends upon the screen or device
-                2.Some browsers does not support different image formats-->
-    </picture>
-    <br>
-    <br>
+    
     <!-- Tables in html -->
     <table class="table1" style="border-collapse:collapse;">
         <tr>
@@ -331,12 +322,420 @@
 
     <!-- javascript in HTML -->
     <p id ="para1" >This is responsive para</p>
-    <button type="submit" onclick="myFunction()">Click Here for Respond</button>
+    <button type="submit" onclick="myFunction()"><mark>Click Here for Respond</mark></button>
+    <br>
+    <br>
     <script>
         function myFunction() {
             document.getElementById("para1").innerHTML = "respondant paragraph"
         }
     </script>
+
+    <!-- computer code in HTML -->
+    <h3>Computer code</h3>
+    <code>
+        x = 10;
+        y = 20;
+        z = x+1
+    </code>
+
+    <pre >
+    <code >
+x = 10;
+y = 20;
+z = x+1
+    </code>
+example for preformatted <mark>code</mark> element</pre>
+    <p>The expression is <var>x</var> = <var>a</var> + <var>b</var> example for <mark>var</mark> element </p>
+    
+    <p>For saving this page press <kbd>ctrl + s</kbd> example for <mark>kbd</mark> element</p>
+
+    <samp>This is machine returned output by using <mark>samp</mark> element</samp>
+
+    <!-- Semantic elements in HTML -->
+    <h3>Figure and Figure caption</h3>
+    <figure >
+        <img src="images/semantic_elements.PNG" alt="semantic elements" width="300px" style="margin: 0%;">
+        <figcaption >Fig-1 semantic_elements</figcaption>
+    </figure>
+
+    <!-- Forms in html -->
+    <h3>Text field</h3>
+    <form action="">
+        <label for="first_name">First Name:</label><br>
+        <input type="text" name="first_name" id="first_name" maxlength="10" minlength="3"><br>
+        <label for="last_name">Last Name:</label><br>
+        <input type="text" id="last_name" name="last_name"  maxlength="20" minlength="13">
+        <input type="submit" value="submit">
+    </form>
+
+    <h3>Radio button</h3>
+    <form action="">
+        <input type="radio" name = "radio" id="radio1" value="radio1" checked>
+        <label for="radio1">first radio</label><br>
+        <input type="radio" name="radio" id = "radio2" value="radio2">
+        <label for="radio2">second radio</label>
+    </form>
+
+    <h3>Checkbox</h3>
+    <form action="">
+        <input type="checkbox" id="fruit1"  name ="fruit1" value ="apple">
+        <label for="fruit1">Apple</label><br>
+        <input type="checkbox" id="fruit2" name="fruit2" value="graph" checked>
+        <label for="fruit2">Graph</label><br>
+        <input type="checkbox" id="fruit3" name="fruit3" value="Orange">
+        <label for="fruit3"> Orange</label><br>
+    </form>
+
+    <h3>Auto complete on form</h3>
+    <form action="" autocomplete="on">
+        <label for="autocomplete">name:</label>
+        <input type="text" name="name" id="autocomplete">
+    </form>
+
+    <h3>Auto complete off form</h3>
+    <form action="" autocomplete="off">
+        <label for="autocomplete">name: </label>
+        <input type="text" name="name" id="autocomplete">
+    </form>
+
+    <h3>No validation form</h3>
+    <form action="" novalidate>
+        <label for="novalidation">Email:</label>
+        <input type="email" name="email" id="novalidate">
+        <input type="submit" value="Click">
+    </form>
+
+    <h3>Drop down</h3>
+    <form action="">
+        <label for="dropdown">Fruit:</label>
+        <select name="fav_fruit" id="dropdown">
+            <option value="mango" selected>Mango</option>
+            <option value="orange">Orange</option>
+            <option value="grape">Grape</option>
+            <option value="banana ">Banana</option>
+        </select>
+        <input type="submit" value="Click">
+    </form>
+    
+    <h3>Drop down with 'multiple' and 'size' attribute</h3>
+    <form action="">
+        <label for="dropdown1">Bike:</label>
+        <select name="fav_bike" id="dropdown1" size="3" multiple>
+            <option value="yamaha">Yamaha</option>
+            <option value="hero">Hero</option>
+            <option value="honda">honda</option>
+        </select>
+        <input type="submit" value="Click">
+    </form>
+
+    <h3>Drop down with optgroup element</h3>
+    <form action="">
+        <label for="dropdown12">Bike:</label>
+        <select name="fav_bike1" id="dropdown12" >
+            <optgroup label="race bikes">
+                <option value="yamaha">Yamaha</option>
+                <option value="hero">Hero</option>
+                <option value="honda">honda</option>
+            </optgroup>
+            <optgroup label="normal bikes">
+                <option value="xl super">XL Super</option>
+                <option value="scooty">Scooty</option>
+            </optgroup>
+        </select>
+        <input type="submit" value="Click">
+    </form>
+
+    <h3>Text area</h3>
+    <form action="">
+        <textarea name="message" id="textarea" cols="30" rows="10">Please write a message followed by this text</textarea>
+    </form>
+
+    <h3>Button type</h3>
+    <form action="">
+        <button onclick="alert('Hello World')" >Click</button>
+    </form>
+
+    <h3>Fieldset and Legend</h3>
+    <form action="">
+        <fieldset>
+            <legend>BIO-DATA</legend>
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname"><br>
+            <label for="lanme">Last Nmae:</label>
+            <input type="text" id="lname"><br>
+            <label for="age">Age:</label>
+            <input type="text" id="age">
+        </fieldset>
+    </form>
+
+    <h3>Data List</h3>
+    <form action="">
+        <input type="text" list="fruits" name="fruits">
+        <datalist id="fruits">
+            <option value="apple"></option>
+            <option value="orange"></option>
+            <option value="banana"></option>
+            <option value="grapes"></option>
+
+        </datalist>
+    </form>
+
+    <h3>Password Field</h3>
+    <form action="">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        <button type="submit">Click</button>
+    </form>
+
+    <h3>Email Field</h3>
+    <form action="">
+        <label for="email1">Email</label>
+        <input type="email" id ="email1" name="email1">
+        <button type="submit">Click</button>
+    </form>
+
+    <h3>Reset type</h3>
+    <form action="">
+        <label for="name2"></label>
+        <input type="name2" id="name2" name="name2">
+        <input type="submit" value="Sumbit">
+        <input type="reset" value="Reset">
+    </form>
+
+    <h3>Color type</h3>
+    <form action="">
+        <label for="color">Pick a Color:</label>
+        <input type="color" id="color" name="color">
+        <input type="submit" value="Click">
+    </form>
+
+    <h3>Date type</h3>
+    <form action="">
+        <label for="date">Pick a Date:</label>
+        <input type="date" value="date" id="date">
+        <input type="submit" value="Click">
+    </form>
+
+    <h3>File type</h3>
+    <form action="">
+        <label for="file">Upload file here:</label>
+        <input type="file" id="file" name="file" >
+        <input type="submit" value="Click">
+    </form>
+
+    <h3>Hidden type</h3>
+    <form action="">
+        <label for="hidden">Hidden:</label>
+        <input type="hidden" value="123" name="hidden">
+        <input type="submit" value="Click">
+    </form>
+
+    <h3>Number type</h3>
+    <form action="">
+        <label for="number">Enter a number here:</label>
+        <input type="number" min="0" max="10" value="0" step="2">
+        <input type="submit" value="Click">
+    </form>
+
+    <h3>Disabled attribute</h3>
+    <form action="">
+        <label for="disable">Disabled field</label>
+        <input type="text" value="vinoth kumar" disabled>
+    </form>
+
+    <h3>Read only</h3>
+    <form action="">
+        <input type="text" readonly value="Veeram">
+        <input type="submit" value="Click">
+    </form>
+
+    <h3>Range type</h3>
+    <form action="">
+        <label for="range">Select the range here</label>
+        <input type="range" name="range" id="range">
+        <input type="submit" value="Click">
+    </form>
+
+    <h3>Search type</h3>
+    <form action="">
+        <input type="search" name="search">
+        <input type="submit" value="Search">
+    </form>
+
+    <h3>Tel type</h3>
+    <form action="">
+        <input type="tel" pattern="[6-9]{1}-[0-9]{9}">
+        <input type="submit" value="Click"><br>
+        <small>Format: 9-234736252</small>
+    </form>
+
+    <h3>Time type</h3>
+    <form action="">
+        <input type="time" required>
+        <input type="submit" value="Click">
+    </form>
+
+    <h3>Url type</h3>
+    <form action="">
+        <input type="url">
+        <input type="submit" value="Click">
+    </form>
+
+    <h3>Auto focus</h3>
+    <form action="">
+        <input type="text" autofocus>
+        <input type="button" value="Click">
+    </form>
+
+    <h3>Image Input</h3>
+    <form action="">
+        <input type="image" src="images\PngItem_5341711.png" alt="submit" height="30" width="30">
+    </form>
+   
+    <h3>Placeholder</h3>
+    <form action="">
+        <input type="text" name ="name" placeholder="Enter your name">
+        <input type="submit" value="Click">
+    </form>
+
+    <h3>Input Form attribute</h3>
+    <form action="" id="form0">
+        <label for="fname">First Name:</label>
+        <input type="text" name="fname" id="fname"><br><br>
+    </form>
+    <label for="lname">Last Name:</label>
+    <input type="text" form="form1" id="lname">
+
+    <h3>Input formaction attribute</h3>
+    <form action="/dir.py">
+        <label for="age"></label>
+        <input type="number" min="18" max="40" id="age"><br/><br/>
+        <input type="submit" value="Sumbit as a user">
+        <input type="submit" value="Submit as a Admin" formaction="web_pages/first.html">
+
+    </form>
+
+    <h3>HTML Canvas</h3>
+    <canvas id="canvas1" height="100" width="180" style="border:1px solid red;"></canvas>
+
+    <h3>HTML SVG</h3>
+    <svg width="180" height="100" style="border:1px solid red;">
+        <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+    </svg>
+
+
+    <!-- Pictute element in html -->
+
+    <h3>Picture Element</h3>
+    <picture>
+        <source media="(min-width: 450px )" srcset="images/computer_image.png">
+        <source media="(min-width: 250px)" srcset="images/nature_with_deer.jpg">
+        <img src="images/image_formats.PNG" alt="Computer Image">
+        <!-- Always define image tag at last for it will take account if the picture tag does not support by browser -->
+        <!-- we can use pictute element for two cases,
+                1.Respond the images depends upon the screen or device
+                2.Some browsers does not support different image formats-->
+    </picture>
+    <br>
+
+    <!-- Vide element in html -->
+    <h3>Video Element</h3>
+    <video width="400" hight="200" autoplay controls >
+        <source src="videos/file_example_MP4_480_1_5MG.mp4" type="video/mp4">
+        Your browser doest not support video tags.
+    </video>
+
+    <h3>Autoplay with Muted</h3>
+    <video width="400" hight="200" autoplay muted controls>
+        <source src="videos/sample-mp4-file.mp4" type="video/mp4">
+        Your browser doest not support video tags.
+    </video>
+    <br>
+
+    <h3>Sample DOM for Video</h3>
+    <div>
+        <button style="color: rgb(36, 38, 43); background-color: rgb(255, 0, 255);" onclick="playPause()">Play/Pause</button><br><br>
+        <video id="video" width="400" hight="200">
+            <source src="videos/sample-mp4-file.mp4" type="video/mp4">
+            This is video file 
+        </video>
+    </div>
+
+    <script>
+        var myVideo = document.getElementById("video");
+        function playPause(){
+            if (myVideo.paused){
+                myVideo.play();
+            }
+            else
+                myVideo.pause();
+            }
+    </script>
+
+    <h3>Audio Element</h3>
+    <audio width="100" controls>
+        <source src="audios/file_example_MP3_700KB.mp3" type="audio/mp3">
+    </audio>
+
+
+    <!-- object and embed element in html -->
+    <h3>Object Element</h3>
+    <object data="web_pages/first.html" width="500" height="200"> This is html page</object>
+
+    <h3>Embed element</h3>
+    <embed src="web_pages/first.html"  width="500" height="200" type="">
+
+    <!-- local storge in html -->
+    <h3>Local storage</h3>
+    <button type="button" onclick="localCountFunction()"> Click</button>
+    <div id="count"></div>
+    <script>
+        function localCountFunction(){
+            if (typeof(Storage) !== "undefined"){
+                if (localStorage.count) {
+                    localStorage.count = Number(localStorage.count)+1;
+
+                }
+                else{
+                    localStorage.setItem("count","1");
+                }
+                document.getElementById("count").innerHTML = "You have " + localStorage.getItem("count") + " time(s) clicked the button";
+            }
+            else{
+                document.getElementById("count").innerHTML = "There is an error"
+            }
+
+        }
+    </script>
+
+    <!-- session storage -->
+    <h3>Session storage</h3>
+    <button type="button" onclick="sessionCountFunction()"> Click me</button>
+    <div id = "sessionCount"></div>
+    <script>
+        function sessionCountFunction(){
+            console.log("pass1");
+            if (typeof(Storage) !== "undefined"){
+                console.log("pass2");
+                if (sessionStorage.count){
+                    sessionStorage.count = Number(sessionStorage.count) + 1;
+                }
+                else{
+                    sessionStorage.setItem("count","1");
+                }
+                document.getElementById("sessionCount").innerHTML = "You have " + sessionStorage.count + " time(s) clicked the button";
+            }
+            else{
+                document.getElementById("sessionCount").innerHTML = "There is an problem";
+            }
+        }
+    </script>
+
+
+
+
+
 
 
 
