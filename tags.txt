@@ -51,11 +51,11 @@
 <input></input> --> often used element in HTML form.It can be displayed in several way depends upon the type attribute (<input type="text",id="text1 vlaue="any">)
 <label></label> --> defines the label for a element.(<label for="element id"></label>)
 <select></select> --> for defining the drop down. (<select> <option></option> </select>)
-<option></option> --> for defining options in the dropdown list. (<option value="Sometext">Some text</option>)
+<option></option> --> for defining options in the dropdown list. (<option value="Sometext">Some text</option>) (we can also use label attsribute)
 <textarea></textarea> --> for defining the textarea. (<textarea name="Some Text" cols="30" rows=10>Some Text</textarea>)
 <fieldset></fieldset> --> for grouping the element within a form. (<fieldset><legend>Some Text</legend><input></fieldset>)
 <legend></legend> --> for naming the fieldset group. (<legend>Some Text</legend>)
-<datalist><datalist> --> for defining the set of pre-definied options for an input filed.(<input list="id"><datalist id="Some Text"><option></option></datalist>)
+<datalist></datalist> --> for defining the set of pre-definied options for an input filed.(<input list="id"><datalist id="Some Text"><option></option></datalist>)
 <button></button> --> for specifing the button. (<button type="button">Some Text</button>)
 <canvas></canvas> --> it act as a containter for graphics drawn by JS.
 <svg></svg> --> It is a container for holding graphics defined by XML.
